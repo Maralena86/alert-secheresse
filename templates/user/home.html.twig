@@ -1,0 +1,35 @@
+{% extends "base.html.twig" %}
+{% block body %}
+<div class="d-flex-column">
+    {% if app.user %}
+         {% if is_granted('ROLE_USER')%} 
+         <p>Bonjour {{app.user.name}}</p>
+         {% endif %}
+        {% else %}
+        <div class="bg-blue d-flex-column">
+        <div class="ville-container d-flex-column">
+            <p>Choisir ma ville</p>
+            <form>
+                <select >
+                {% for ville in villes %}
+                    <option value="{{ville.nom}}">{{ville.nom}}</option>
+                {% endfor %}
+                </select>
+            </form>
+        </div>
+        <div class="d-flex btn-container">
+      
+        {% for categorie in categories %}
+            <a class="btn btn-category" href="{{path('app_display_particulier')}}">{{categorie.name}}</a>
+        {% endfor %} 
+        </div>
+    </div>
+    {% endif %}
+    <h1 class="text-center">L'eau est notre bien commun, préservons-la ensemble!</h1>
+    <img class="image-eco-geste" src="images/eco_gestes.png"/>
+    <img class="image-eco-geste" src="images/water-care.png"/>
+</div>
+
+
+
+{% endblock %}

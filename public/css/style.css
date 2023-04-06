@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.w-90{
+    width: 90%;
+}
+h1{
+    color: #2b67bb;
+    margin: 0.5rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.d-flex{
+    display: flex;
+    justify-content: center;
+}
+.d-flex-column{
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: column;
+}
+.text-center{
+    text-align: center;
+}
+header{
+    height: 90px;
+    background-image: linear-gradient(#2b67bb, rgb(90, 181, 105));
+}
+form{
+    background-color: rgb(232, 237, 247);
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 50%;
+}
+select{
+    margin: 1rem auto;
+    padding: 0.5rem;
+    display: block;
+    color: gray;
+    border-radius: 10px;
+}
+input{
+    padding: 5px;
+    margin: 5px 0px;
+    border-radius: 5px; 
+    border: none;
+    width: 100%; 
+}
+table{
+   
+    background-color: rgb(232, 237, 247);
+    padding: 2rem;
+    width: 95%;
+    border-radius: 10px;
+    display: block;
+    margin: 1rem auto;
+}
+td{
+    padding: 10px;
+    text-align: center;
+    color: gray;
+}
+
+.bg-blue{
+    background-color: rgb(241, 244, 248);
+}
+#star{
+    width: 30px;
+}
+/*----------------base------------------*/
+nav{
+    height: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo>img{
+    width: 64px;
+}
+a{
+    text-decoration: none;
+    transition-duration: 0.5s;
+    
+}
+a:hover{
+    scale: 1.05;
+}
+li{
+    list-style: none;
+}
+li>a{
+    color: white;
+}
+
+.btn-container{
+    padding: 2rem 0rem 4rem 0rem;
+    gap: 3rem;
+}
+.btn, button{
+    background-image: linear-gradient(rgb(43, 103, 187), rgb(90, 181, 105));
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+button{
+    border: none;
+    box-shadow: 3px 4px 10px gray;
+    margin: 1rem;
+}
+.image-eco-geste{
+    border-radius: 10px;
+    margin: 3rem;
+    width: 300px;
+    display: block;
+    margin: 2rem auto;
+}
+.ville-container{
+    align-items: center;
+    padding: 1rem;
+}
+/*----------------connexion------------------*/
+.form-container-connexion{
+    border-radius: 10px;
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 50%;
+}
+.img-form img{
+    height: 60px;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+/*----------------user------------------*/
+#espace-user{
+    width: 100%;
+}
+.alert-container{
+    width: 100%;
+}
+#alert-image{
+    height: 400px;
+    display: block;
+    margin: 3rem auto;
+    background-color: #e8edf7;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px #c2c2c4;
+    border: 0.5px solid #cec7c7;
+    transition-duration: 1s;
+}
+
+.text-user-home{
+    padding: 1rem;
+}
+.nav-user{
+    text-align: center;
+    background-color: #081e3d;
+    padding: 1rem;
+    color: white;
+}
+.nav-user-btn{
+    gap: 2rem;
+}
+.welcome-user{
+    padding: 0.5rem;
+}
+.img-usage{
+    width: 60px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+}
+#img-a{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+#a{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+

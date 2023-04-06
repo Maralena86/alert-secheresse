@@ -1,0 +1,64 @@
+{% extends "base.html.twig" %}
+{% block body %}
+<div id="espace-user">
+    <div class="d-flex-column" >
+
+    <div class="nav-user">
+        <div class="welcome-user">
+            <h2>Mon espace</h2>
+            <p>Bienvenue Jacques Dupont</p>
+        </div>
+        <div class="d-flex nav-user-btn">
+            <a class="btn" href="{{path('app_display_particulier')}}">MES ALERTS</a>
+            <a class="btn btn-category" href="{{path('app_display_geste')}}">LES FAVORIS</a>
+            <a class="btn btn-category" href="{{path('app_display_alert')}}">MES GESTES</a>
+        </div>
+    </div> 
+    
+    <div>
+    <table>
+  <tr>
+  <th></th>
+    <th>Restriction</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+  <td><img id="star" src="http://plui.cc-cln.fr/images/etoiles/etoile_pleine_bleu.png"></td>
+    <td>
+        <img class="img-usage" src="https://cdn-icons-png.flaticon.com/512/28/28657.png">
+        <p>Arrossage des pelouses et de masifs fleuris</p>
+    </td>
+    <td>Interdit entre 8 heures et 20 heures</td>
+</tr>
+<tr>
+    <td>
+        <img id="star" src="http://plui.cc-cln.fr/images/etoiles/etoile_pleine_bleu.png">
+    </td>
+    <td>
+        <img class="img-usage" src="https://cdn-icons-png.flaticon.com/512/4405/4405199.png">
+        <p>Alimentation en eau potable des populations(pour les usages prioritaires liés à la santé, la salubrité et la sécurité civile)</p>
+    </td>
+    <td>Interdit de 10h à 15h</td>
+</tr>
+
+  </tr>
+  {% for usage in usages %}
+  <tr>
+  
+  <td><img id="star" src="https://cdn-icons-png.flaticon.com/512/126/126482.png"</td>
+    <td>
+        <img class="img-usage" src="{{usage.img}}">
+        <p>{{usage.name}}</p>
+    </td>
+    <td>{{usage.description}}</td>
+
+
+  </tr>
+    {% endfor %}
+    <tr>
+  
+  
+</table>
+    </div>
+</div>
+{% endblock %}

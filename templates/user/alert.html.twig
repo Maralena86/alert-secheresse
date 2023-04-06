@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+{% block body %}
+<div id="espace-user">
+<div class="nav-user">
+        <div class="welcome-user">
+            <h2>Mon espace</h2>
+            <p>Bienvenue Jacques Dupont</p>
+        </div>
+        <div class="d-flex nav-user-btn">
+            <a class="btn" href="{{path('app_display_particulier')}}">MES ALERTS</a>
+            <a class="btn btn-category" href="{{path('app_display_geste')}}">LES FAVORIS</a>
+            <a class="btn btn-category" href="{{path('app_display_alert')}}">MES GESTES</a>
+        </div>
+    </div> 
+    
+    <div class="d-flex-column" >
+
+    <img id="img-a" src="../images/ecogestes.png"/>
+    </div>
+</div>
+{% endblock %}

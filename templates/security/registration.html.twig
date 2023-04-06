@@ -1,0 +1,18 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+<div class="d-flex connexion-container ">
+    
+    <div class="flex-center-col form-container-connexion bg-blue">
+        <h1 class="text-center">Inscription</h1>
+        <div class="img-form">
+            <img src="images/logo-eaucareblue.png"/>
+        </div>
+     
+        {{form(form)}}
+        <p>Déjà inscrit(e)</p><a href="{{path('app_login')}}">Se connecter</a>
+
+    </div>
+</div>
+{% endblock %}

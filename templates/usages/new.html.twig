@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Usages{% endblock %}
+
+{% block body %}
+    <h1 class="text-center">Créer Usage</h1>
+
+    {{ include('usages/_form.html.twig') }}
+
+    <a class="text-center" href="{{ path('app_usages_index') }}">Tous les usages</a>
+{% endblock %}

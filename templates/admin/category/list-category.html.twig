@@ -1,0 +1,6 @@
+{% extends "base.html.twig" %}
+{% block body %}
+{% for categorie in categories %}
+    <p>{{categorie.name}}</p>
+{% endfor %}
+{% endblock %}
